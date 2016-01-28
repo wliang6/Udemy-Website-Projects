@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+    <title>Learning CSS Part 2</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width-device-width, initial-scale=1"/>
+    
+    <style type="text/css">
+    
+        div{
+            width:100px;
+            height:100px;
+            float:left;
+            margin:20px;
+        }
+        
+        .red{
+            background-color:red;
+            border:5px yellow groove; /*need 3 pieces of information on the border: size, color, type. Types of borders: none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset, initial, inherit */
+        }
+        
+        .blue{
+            background-color:blue;
+            /*customized border on each side of the div*/
+            border-style: ridge solid dotted dashed;
+            border-width:10px 5px 3px 6px;
+            border-color:aquamarine;
+        }
+        
+        .green{
+            background-color:green;
+            border-radius:10px; /*gives the square div a curvier border in the corner*/
+            /*to create a circle, border-radius:50px, it has to be half of the width and height of the div which in this case is 100px*/
+            /*border-radius:50px;*/
+        }
+        
+        
+        /*FONT SECTION NOW*/
+        p{
+            clear:both;
+            font-family:Arial, Helvetica, sans-serif;
+            /*Serif Fonts = more Times new roman; Sans-Serif Fonts = more modern, rounder like Arial/Verdana; Monospace Fonts = same width fonts like Courier New */
+            /*The order of the listed fonts is in the order of highest preference to lowest depending on the availability of these fonts on your computer.*/
+        }
+        
+        .bold{
+            font-weight:bold;
+            color:green;
+            font-size:200%; /* % percentages or 16 pixels or 1 em */
+        }
+        
+        .italic{
+            font-style:italic;
+        }
+        
+        .underline{
+            font-decoration:underline;
+        }
+        
+        .greenbox{
+            width:300px;
+            height:50px;
+            background-color:green;
+            text-align:justify; /*alignment inside the div*/
+        }
+         
+        
+        /*Links and styling them*/
+        a:visited{  
+            color:green;
+        }
+        
+        a:hover{
+            font-size:25px;
+        }
+    </style>
+</head>
+    
+    
+    
+<body>
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    
+    
+    
+    <!--FONT notes-->
+    <p class="bold">This is some bold text.</p>
+    <p class="italic">This is some <span class="underline">italic</span> text.</p>
+    
+    
+    <!--div tag is the the parent tag and p tag is a child tag-->
+    <div class="greenbox">
+        <p>This is some text This is some text This is some text This is some text</p>
+    </div>
+    
+    
+    <a href="http://www.google.com" target=_blank>Google</a> <!-- target=_blank opens link in new tab-->
+    
+</body>
+</html>

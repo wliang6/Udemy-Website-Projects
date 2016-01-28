@@ -8,7 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   
     <style type="text/css">
-    
+    /*internal CSS*/
+    /*html-color-codes.info for colors*/
+        
         .large {
             font-size:300%;
             color:darkblue;
@@ -26,15 +28,64 @@
             font-weight:bold;
         }
         
+        .lavendarbox{
+            background-color:#F2E0F7;
+            width:200px;
+            height:200px;
+            /*float:left;
+            left:50px; 
+            top:20px; left, top, etc = adds margin*/
+            position:static;
+            /*resolute, absolute, fixed (size of site), static (no instruction; default)*/
+            z-index:1; /*shows what goes on top during overlapping. the higher the index, the more front it will be*/
+            margin:50px 100px 30px 10px; /*margin that surrounds all sides of the div; starts top,right,bottom,left which is clockwise*/
+            /*margin-left:400px*/
+            padding:10px; /*padding is the margin WITHIN the div that surrounds the text. Note: <p> has padding effects already built-in.*/ 
+            /*padding:10px 100px //this repeats itself so top:10px, right:100px, bottom:10px, left:100px*/
+            /*padding-left:10px*/ 
+        }
+        
+        .mintcreambox{
+            background-color:mintcream;
+            width:300px;
+            height:100x;
+            /*float:right;*/
+            position:relative;
+            z-index:2;
+        }
+        
+        /*
+        .floatleft{   //floatleft and floatright allows the divs to float anywhere on a horizontal plane
+            float:left;
+        } 
+        
+        .clear{   //controls behavior of floating elements so it appears at the bottom
+            clear:both;
+        }*/
+        
+        p{
+            padding:0;
+            margin:0;
+        }
+        
     </style>    
     
 </head>
 
 <body>
 
-    <p class="large">This is some text.</p>
-    <p id="green" class="large">This is some more text.</p>
-    <p>The third <span class="underline large bold">word</span> in this paragraph is underlined.</p>
+    <div class="lavendarbox">
+        <p class="large">This is some text.</p>
+        <p>More text!</p>
+    </div>
+    
+    <div class="mintcreambox">
+        <p id="green" class="large">This is some more text.</p>
+    </div>
+    
+    <!--clear - clears the floats and the div appears beneathe instead of floating; specifies which sides of an element floating elements are not allowed to float-->
+    <div class="clear"></div> 
+        <p class>The third <span class="underline large bold">word</span> in this paragraph is underlined.</p>
     
 </body>
 </html>
