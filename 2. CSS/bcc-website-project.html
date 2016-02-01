@@ -99,7 +99,7 @@
         #newsbar{
             background-color:#990000;
             width:100%;
-            height:39px;
+            height:40px;
             bottom:20px;
             float:right;
             color:white;
@@ -165,13 +165,127 @@
             font-weight:600;
             background-color:none;
             float:left;
-            border-left:1px #5B2D2F solid;
+            border-right:1px #5B2D2F solid;
             padding-left:5px;
             padding-right:5px;
-            
-           
-            
+ 
         }
+        
+        .selected{
+            background-color:#EDEDED;
+            color:#666666;
+            height:19px;
+            position:relative;
+            top:-4px;
+            padding-top:3px !important;
+        }
+        
+        #content{
+            width:100%;
+            color:#535353;
+            font-size:0.75em;
+            margin-left:37px;
+            font-family:arial;
+        }
+        
+        .date{
+            font-weight:bold;
+        }
+        
+        h1{
+            color:#1F4F82;
+            font-size:2.5em;
+        }
+        
+        .headlineimage{
+            float:left;
+        }
+        
+        .newsitem{
+            position:relative;
+            left:10px;
+            top:-15px;
+            width:230px;
+            float:left;
+            font-size:1.1em;
+        }
+        
+        .newsitem a{
+            color:#1F4F82;
+        }
+        
+        a{
+            text-decoration:none;
+        }
+        
+        a:hover{ /*when hovering over a link, underline shows- shows for all links*/
+            text-decoration:underline;
+        }
+        
+        .video{
+            background-image:url("images/arrowbutton.png");
+            background-repeat:no-repeat;
+            background-position:left center;
+            padding-left:20px;
+            background-size:16px;
+        }
+        
+        .links{
+            line-height:1.6em;  /*fixes the linebreak <br /> spacings*/
+        }
+        
+        .sound{
+            background-image:url("images/audiobutton.png");
+            background-repeat:no-repeat;
+            background-position:left center;
+            padding-left:20px;
+            background-size:16px;
+        }
+        
+        #watch-and-listen{
+            background-color:#EEEEEE;
+            float:right;
+            width:374px;
+            height:60px;
+            position:relative;
+            top:-50px;
+            font-size:13px;
+        }
+        
+        h2{
+            color:#505050;
+            font-size:2em;
+            margin:10px 0 10px 10px;
+        }
+        
+        .colorfulboxes{
+            float:right;
+            margin:20px 10px;
+            height:15px;
+        }
+        
+        .leftarrow{
+            float:left;
+            border-right:1px solid white;
+            height:145px;
+        }
+        
+        .watchlistenblock{ 
+            float:left;
+            background-color:#D1700E;
+            width:157px;
+            border-right:1px solid white;
+        }
+        
+        .watchlistenblock img{
+            height:85px;
+            width:157px;
+        }
+        
+        .rightarrow{
+            height:145px;
+        }
+        
         
     </style>
  </head>
@@ -222,7 +336,7 @@
                 <ul>
                     <li>Home</li>   
                     <li>World</li>
-                    <li>UK</li>
+                    <li class="selected">UK</li>
                     <li>England</li>
                     <li>N. Ireland</li>
                     <li>Scotland</li>
@@ -233,7 +347,7 @@
                     <li>Education</li>
                     <li>Sci/Environment</li>
                     <li>Technology</li>
-                    <li>Entertainment & Arts</li>
+                    <li style="border-right:none">Entertainment & Arts</li>
                     
                 </ul>
                 
@@ -243,6 +357,57 @@
  
         </div>
         
+    </div>
+    
+    <div class="break"></div>
+    
+    <div id="content">
+    
+        <div class="fixed-width">
+            
+            <p><span class="date">2 April 2014</span> Last updated at 15:23</p>
+            
+            <h1>Pollution to spread across England</h1>
+            
+            <img class="headlineimage" src="images/pollution.png" />
+
+            <div class="newsitem">
+            
+            <p>Health warnings have been issued by the government as pollution spreading across England is forecase to hit high levels. </p>
+            
+            <p class="links"><a class="video" href="">Why are pollution levels so high?</a><br />
+                
+            <a class="video" href="">Saharan dust visible on cars</a><br />
+                
+            <a class="video" href="">How Saharan dust reached the UK</a><br />
+                
+            <a href="">What will pollution do to us?</a><br />
+            
+            <a class="sound" href="">Air pollution a 'serious issue'</a><br />
+                
+            </p>
+            
+            </div>
+            
+            <div id="watch-and-listen">
+                
+                <img src="images/colorfulboxes.png" class="colorfulboxes"/>
+                
+                <h2>Watch/Listen</h2>
+                <img src="images/watchlisten1.png" class="leftarrow">
+                
+                <div class="watchlistenblock">
+                    <img src="images/watchlisten2.png">
+                    <p><a href="">Waterfall records biggest ever flow</a></p>
+                </div>
+                
+                <div class="watchlistenblock">
+                    <img src="images/watchlisten3.png">
+                    <p><a href="">Rio's historic Maracana stadium</a></p>
+                </div>
+                <img src="images/watchlisten4.png" class="rightarrow">
+        </div>
+    </div>
     </div>
     
 </body>
