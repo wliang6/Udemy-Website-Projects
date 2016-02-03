@@ -1,0 +1,302 @@
+        body{
+            margin:0;
+            font-family: arial,sans-serif;
+        }
+        
+        #topbar{
+            background-color:#7B0000;
+            width:100%;
+            height:39px;
+            border-bottom:1px #900000 solid;
+        }
+        
+        .fixed-width{
+            width:1050px;
+            margin:0 auto; /*fixed width when you expand window*/
+        }
+        
+        #logodiv{
+            padding-top:6px;
+            float:left;
+            height:33px;
+            border-right:1px #900000 solid;
+            padding-right:5px;
+            margin-left:41px;
+        }
+        
+        
+        #topmenudiv{
+            float:left;
+        }
+        
+        #signindiv{
+            font-weight:bold;
+            padding:6px 143px 12px 20px;
+            font-size:0.9em;
+            float:left;
+            border-right:1px #900000 solid;
+            height:20px;
+        }
+        
+        #signindiv {
+            margin:0;
+        }
+        
+        
+        #topmenudiv ul{
+            margin:0;
+            padding:0;
+        }
+        
+        #topmenudiv li{
+            list-style:none; /**gets rid of the bullet-points**/
+            color:white;
+            font-weight:bold;
+            font-size:0.8em;
+            float:left;
+            padding:11px 15px 7px 15px;
+            height:21px;
+            border-right:1px #900000 solid;
+            
+        }
+        
+        #searchdiv{
+            float:left;
+            padding:8px 0 0 10px;
+            height:30px;
+            width:
+            border-right:1px #900000 solid;
+        }
+        
+        #searchdiv input{
+            height:20px;
+            width:209px;
+            border:none;
+            padding-left:10px;
+            font-size:0.8em;
+            font-weight:bold;
+            background-image:url("images/magnify.png");
+            background-repeat:no-repeat;
+            background-position:right center;
+            background-size:20px;
+            
+        }
+        
+        .break{
+            clear:both;
+        }
+        
+        #newsbar{
+            background-color:#990000;
+            width:100%;
+            height:40px;
+            bottom:20px;
+            float:right;
+            color:white;
+            height:88px;
+        }
+        
+        #newsbar p{
+            margin:0;
+            padding:0;
+            padding-top:9px;
+            padding-left:42px;
+            float:left;
+        }
+
+        #newsuk img{
+            width:193px;
+            float:left;
+            padding-left:41.5px;
+            padding-top:8px;
+        }
+        
+        #newsheader{
+            font-size:42px;
+        }
+        
+        #uk{
+            font-size:30px;
+            padding-left:20px;
+            font-family:
+        }
+        
+        #rss{
+            float:right;
+            margin-top:33px;
+            padding-right:43px;
+            font-size:12.5px;
+            font-family: arial, sans-serif;
+        }
+        
+        #rss img{
+            height:15px;
+            padding-left:4px;
+        }
+    
+        #topicmenu{
+            margin-left:37px;
+            margin-top:10px;
+            width:975px;
+            font-family: arial,sans-serif;
+        }
+        
+        #topicmenu ul{
+            background-color:#3E0C0D;
+            padding:0;
+            margin:0;
+            padding:5px 7px 5px 1px;
+            height:14px;
+        }
+        
+        #topicmenu li{
+            list-style:none; 
+            font-size:12px;
+            font-weight:600;
+            background-color:none;
+            float:left;
+            border-right:1px #5B2D2F solid;
+            padding-left:5px;
+            padding-right:5px;
+ 
+        }
+        
+        .selected{
+            background-color:#EDEDED;
+            color:#666666;
+            height:19px;
+            position:relative;
+            top:-4px;
+            padding-top:3px !important;
+        }
+        
+        #content{
+            width:100%;
+            color:#535353;
+            font-size:0.75em;
+            margin-left:37px;
+            font-family:arial;
+        }
+        
+        .date{
+            font-weight:bold;
+        }
+        
+        h1{
+            color:#1F4F82;
+            font-size:2.5em;
+        }
+        
+        .headlineimage{
+            float:left;
+        }
+        
+        .newsitem{
+            position:relative;
+            left:10px;
+            top:-15px;
+            width:230px;
+            float:left;
+            font-size:1.1em;
+        }
+        
+        .newsitem a{
+            color:#1F4F82;
+        }
+        
+        a{
+            text-decoration:none;
+        }
+        
+        a:hover{ /*when hovering over a link, underline shows- shows for all links*/
+            text-decoration:underline;
+        }
+        
+        .video{
+            background-image:url("images/arrowbutton.png");
+            background-repeat:no-repeat;
+            background-position:left center;
+            padding-left:20px;
+            background-size:16px;
+        }
+        
+        .links{
+            line-height:1.6em;  /*fixes the linebreak <br /> spacings*/
+        }
+        
+        .sound{
+            background-image:url("images/audiobutton.png");
+            background-repeat:no-repeat;
+            background-position:left center;
+            padding-left:20px;
+            background-size:16px;
+        }
+        
+        #watch-and-listen{
+            background-color:#EEEEEE;
+            float:right;
+            width:371px;
+            height:60px;
+            position:relative;
+            top:-50px;
+            font-size:14px;
+            right:15px;
+        }
+        
+        h2{
+            color:#505050;
+            font-size:2em;
+            margin:10px 0 10px 10px;
+        }
+        
+        .colorfulboxes{
+            float:right;
+            margin:20px 10px;
+            height:15px;
+        }
+        
+        .leftarrow{
+            float:left;
+            border-right:1px solid white;
+            height:138px;
+        }
+        
+        .watchlistenblock{ 
+            float:left;
+            background-color:#D1700E;
+            width:157px;
+            border-right:1px solid white;
+        }
+        
+        .watchlistenblock img{
+            height:85px;
+            width:157px;
+        }
+        
+        .watchlistenblock a{
+            color:white;
+        }
+        
+        .watchlistenblock p{
+            margin:9px 10px 8px 10px;
+        }
+        
+        .rightarrow{
+            height:138px;
+            float:right;
+        }
+        
+        #watch-and-listen ul{
+            
+        }
+        
+        #watch-and-listen li{
+            list-style:none;
+            background-image:url("images/live.png");
+            background-repeat:no-repeat;
+            background-position:left center;
+            padding: 10px 10px 10px 40px;
+            background-size:30px;
+            font-size:1.2em;
+        }
+        
