@@ -89,7 +89,6 @@
         #newsbar{
             background-color:#990000;
             width:100%;
-            height:40px;
             bottom:20px;
             float:right;
             color:white;
@@ -246,7 +245,7 @@
         h2{
             color:#505050;
             font-size:2em;
-            margin:10px 0 10px 10px;
+            margin:10px 0 13px 10px;
         }
         
         .colorfulboxes{
@@ -258,7 +257,7 @@
         .leftarrow{
             float:left;
             border-right:1px solid white;
-            height:138px;
+            height:139px;
         }
         
         .watchlistenblock{ 
@@ -278,7 +277,7 @@
         }
         
         .watchlistenblock p{
-            margin:9px 10px 8px 10px;
+            margin:9px 10px 9px 10px;
         }
         
         .rightarrow{
@@ -287,7 +286,8 @@
         }
         
         #watch-and-listen ul{
-            
+            margin: 10;
+            padding: 10px 10px 10px 10px;
         }
         
         #watch-and-listen li{
