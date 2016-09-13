@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <title>Learning Javascript</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  
+<body>
+
+    <!-- Shows alert box with Hi when button is clicked-->
+    <!--<button onclick = "alert('Hi')">Click Me!</button>-->
+    <button id="textChanger">Change first div text.</button>
+    
+    <div id="firstDiv">This is some text</div>
+    
+    <button id="textAppender">Append some text</button>
+    
+    <div id="secondDiv">Javascript is...</div>
+    
+    <button id="textCreator">Create some text</button>
+    
+    <div id="emptyDiv"></div>
+    <!--<p id="text">Some text</p>-->
+    
+    <!-- script tags are usually surrounding javascript code. (can be blacked in head tags or body tags)-->
+    <script type = "text/javascript">
+        
+        //Refer the element of the document by ID called text and then make an alert message with the inner html inside the text
+        //alert(document.getElementById("text").innerHTML);
+        document.getElementById("textChanger").onclick = function() {
+            //change text of firstDiv
+            document.getElementById("firstDiv").innerHTML = "This is awesome!";
+        }
+        document.getElementById("textAppender").onclick = function() {
+            //append text to secondDiv
+            document.getElementById("secondDiv").innerHTML = document.getElementById("secondDiv").innerHTML + "awesome!";
+        }
+        document.getElementById("textCreator").onclick = function() {
+            //add text (HTML unordered list) to emptyDiv 
+            document.getElementById("emptyDiv").innerHTML = "<ul><li>Cat</li><li>Dog</li></ul>";
+        }
+        
+    
+    </script>
+</body>
+    
+</html>
+
