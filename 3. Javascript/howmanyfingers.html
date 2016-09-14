@@ -22,7 +22,8 @@
     <input id="answer"/>
     <button id="myButton">Submit</button>
 -->
-    <p>How many fingers are YOU holding up?</p>
+    
+    <p id="paragraph">How many fingers are YOU holding up?</p>
     <input id="myNumber" />
     <button id="guess">Guess</button>
     <p id="arrayString"></p> 
@@ -62,6 +63,16 @@
 //        document.getElementById("arrayString").innerHTML=arrayString;
 //        
         
+        
+///***********Practicing functions in Javascript************/
+//        function adding(a,b){
+//            return(a+b);
+//        }
+//        document.getElementById("guess").onclick = function(){
+//            document.getElementById("paragraph").innerHTML = adding(865, 20);
+//        }
+        
+//        
         document.getElementById("guess").onclick = function(){
             var gotit = false; //boolean value
             var guesses = 1;
@@ -78,7 +89,7 @@
                     guesses++; //increase the number of guesses
                 }
             }
-            alert("Got it! It was a " + x + ". It took me " +guesses+ "guesses!");
+            alert("Got it! It was a " + x + ". It took me " +guesses+ " guesses!");
         }
     </script>
 </body>
